@@ -7,15 +7,18 @@ const submissionSchema = new mongoose.Schema(
       required: true,
     },
     evaluationId: {
-      type: mongoose.Types.ObjectId,
+      type: mongoose.Schema.Types.ObjectId,
+      ref:"evalaution",
       required: true,
     },
     studentId: {
-      type: mongoose.Types.ObjectId,
+      type: mongoose.Schema.Types.ObjectId,
+      ref:"user",
       required: true,
     },
     batchId: {
-      type: mongoose.Types.ObjectId,
+      type: mongoose.Schema.Types.ObjectId,
+      ref:"batch",
       required: true,
     },
   },

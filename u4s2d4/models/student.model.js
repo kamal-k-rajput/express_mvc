@@ -7,11 +7,13 @@ const studentSchema = new mongoose.Schema(
       required: true,
     },
     userId: {
-      type: mongoose.Types.ObjectId,
+      type: mongoose.Schema.Types.ObjectId,
+      ref:"user",
       required: true,
     },
     batchId: {
-      type: mongoose.Types.ObjectId,
+      type: mongoose.Schema.Types.ObjectId,
+      ref:"batch",
       required: true,
     },
   },

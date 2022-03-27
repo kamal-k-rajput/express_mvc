@@ -5,7 +5,8 @@ const evaluationSchema = new mongoose.Schema({
   evaluation: { type: String, required: true },
 
   batch_id: {
-    type: mongoose.Types.ObjectId,
+    type: mongoose.Schema.Types.ObjectId,
+    ref:"batch",
     required: true,
   },
   userId: {
